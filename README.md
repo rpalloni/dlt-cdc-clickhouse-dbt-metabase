@@ -1,4 +1,4 @@
-# dlt-cdc-clickhouse-dbt
+### architecture
 dlt and cdc ingestion and modeling in clickhouse
 
 Ingestion streams in ClickHouse:
