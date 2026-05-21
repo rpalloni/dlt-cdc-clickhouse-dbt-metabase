@@ -1,4 +1,4 @@
-### architecture
+à#### architecture
 dlt and cdc ingestion and modeling in clickhouse
 
 Ingestion streams in ClickHouse:
@@ -18,9 +18,9 @@ Credentials configuration are resolved from `.dlt/secrets.toml`
 
 ### run
 ```
-make up (runs init scripts both in PG and CH)
-make events (terminal 1)
-make ingest (terminal 2)
+make up     # (runs init scripts both in PG and CH)
+make events # (terminal 1)
+make ingest # (terminal 2)
 
 make down
 make destroy
