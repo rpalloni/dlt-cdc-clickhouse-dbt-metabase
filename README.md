@@ -35,10 +35,10 @@ make destroy
 ### Metabase
 Official connector ClickHouse
 
-| Field    | Value                               |
-| -------- | ----------------------------------- |
-| UI       | localhost:3000                      |
-| Host     | clickhouse-server                   |
-| Port     | 8123                                |
-| User     | chuser                              |
-| Password | chpassword                          |
+| Field    | Value              |
+| -------- | -------------------|
+| UI       | localhost:3000     |
+| Host     | clickhouse-server  |
+| Port     | 8123               |
+| User     | chuser             |
+| Password | chpassword         |
