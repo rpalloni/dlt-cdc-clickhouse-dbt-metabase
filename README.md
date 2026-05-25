@@ -1,5 +1,8 @@
-à#### architecture
+#### architecture
 dlt and cdc ingestion and modeling in clickhouse
+
+**Client-Server model architecture:**
+Query engine: clickhouse server created as infrastructure component on a dedicated container.
 
 Ingestion streams in ClickHouse:
 ```
