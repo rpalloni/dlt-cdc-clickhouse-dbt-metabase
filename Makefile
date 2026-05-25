@@ -2,6 +2,7 @@ COMPOSE = docker compose \
 	-f docker/docker-compose-pg-cdc.yml \
 	-f docker/docker-compose-clickhouse.yml \
 	-f docker/docker-compose-storage.yml \
+	-f docker/docker-compose-metabase.yml \
 	--env-file docker/.env
 
 network:

@@ -1,5 +1,8 @@
-#### architecture
+### Architecture
 dlt and cdc ingestion and modeling in clickhouse
+
+**Client-Server model architecture**
+Clickhouse as query engine created as an infrastructure component on a dedicated container to ingest CDC, enable `dbt` transformations and serve Metabase requests.
 
 **Client-Server model architecture:**
 Query engine: clickhouse server created as infrastructure component on a dedicated container.
@@ -28,3 +31,14 @@ make ingest # (terminal 2)
 make down
 make destroy
 ```
+
+### Metabase
+Official connector ClickHouse
+
+| Field    | Value                               |
+| -------- | ----------------------------------- |
+| UI       | localhost:3000                      |
+| Host     | clickhouse-server                   |
+| Port     | 8123                                |
+| User     | chuser                              |
+| Password | chpassword                          |
