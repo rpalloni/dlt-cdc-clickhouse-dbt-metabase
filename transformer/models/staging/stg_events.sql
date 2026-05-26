@@ -7,4 +7,4 @@ select
     , cast(date_trunc('day', cast(timestamp as timestamp)) as date) as event_date
     , event
     , name as page_name
-from {{ source('events', 'events') }}
+from {{ source('events', 'events___events') }}

@@ -12,4 +12,4 @@ sources:
      database: events
      schema: events
      tables:
-        - name: events__events
+        - name: events___events
