@@ -1,0 +1,11 @@
+transformer:
+   target: dev
+   outputs:
+      dev:
+         type: clickhouse
+         schema: dbt
+
+         host: localhost
+         port: 8123
+         user: chuser
+         password: chpassword
