@@ -3,6 +3,6 @@ select
     , name              as company_name
     , vat_number
     , country
-    , cast(created_at as timestamp(6)) as created_at
-    , cast(updated_at as timestamp(6)) as updated_at
-from {{ source('pgsource', 'companies') }}
+    , cast(created_at as timestamp) as created_at
+    , cast(updated_at as timestamp) as updated_at
+from {{ source('pg_cdc', 'companies') }}

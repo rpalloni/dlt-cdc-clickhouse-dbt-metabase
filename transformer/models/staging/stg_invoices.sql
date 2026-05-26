@@ -7,6 +7,6 @@ select
     , status
     , cast(issued_at as date) as issued_at
     , cast(due_at as date) as due_at
-    , cast(created_at as timestamp(6)) as created_at
-    , cast(updated_at as timestamp(6)) as updated_at
-from {{ source('pgsource', 'invoices') }}
+    , cast(created_at as timestamp) as created_at
+    , cast(updated_at as timestamp) as updated_at
+from {{ source('pg_cdc', 'invoices') }}

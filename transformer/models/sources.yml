@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+   - name: pg_cdc
+     database: pg_cdc
+     schema: pg_cdc
+     tables:
+        - name: companies
+        - name: invoices
+
+   - name: events
+     database: events
+     schema: events
+     tables:
+        - name: events__events
